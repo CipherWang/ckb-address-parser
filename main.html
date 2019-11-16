@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head><title>TypeScript Greeter</title></head>
+    <body>
+        <script src="./bech32.js"></script>
+        <script>
+            decode_data = decode("ckb1qyqv9w4p6k695wkkg54eex9d3ckv2tj3y0rs6ctv0m")
+            toAddress = bytesToHex(fromWords(decode_data.words));
+            document.body.innerHTML = toAddress;
+            console.trace(toAddress);
+        </script>
+    </body>
+</html>
